@@ -1,6 +1,8 @@
----
 - hosts: workers
   user: pi
+  become: yes
+  become_user: root
+  become_method: sudo
   roles:
     - common
     - rpi_exporter
@@ -8,5 +10,8 @@
 
 - hosts: monitoring_server 
   user: pi
+  become: yes
+  become_user: root
+  become_method: sudo
   roles:
     - monitoring_server 
