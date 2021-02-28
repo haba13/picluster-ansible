@@ -1,6 +1,6 @@
 ---
 - name: Playbook for upgrading the RPis
-  hosts: raspberry_pi
+  hosts: workers
   user: pi
   gather_facts: no
   tasks:

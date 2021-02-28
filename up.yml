@@ -1,5 +1,5 @@
 ---
-- hosts: raspberry_pi
+- hosts: workers
   user: pi
   roles:
     - common
