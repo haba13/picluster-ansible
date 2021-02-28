@@ -1,6 +1,6 @@
 
 ---
-- hosts: raspberry_pi 
+- hosts: workers 
   user: pi
   become: yes
   become_user: root

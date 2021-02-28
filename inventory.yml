@@ -17,6 +17,11 @@ all:
         worker2: {}
         worker3: {}
         masterpi: {}
+    workers:
+      hosts:
+        worker1: {}
+        worker2: {}
+        worker3: {}
     monitoring_server:
       hosts:
         masterpi: {}
