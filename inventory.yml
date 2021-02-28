@@ -11,15 +11,15 @@ all:
     worker3:
       ansible_host: worker3
   children:
-    workers:
+    raspberry_pi:
       hosts:
         worker1: {}
         worker2: {}
         worker3: {}
+        masterpi: {}
     monitoring_server:
       hosts:
         masterpi: {}
   vars:
     ansible_python_interpreter: /usr/bin/python3
     remote_user: pi
-    user: pi
